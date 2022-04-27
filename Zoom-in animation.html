@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)file:///C:/Users/ACER/Documents/HTML/Zoom-in%20animation.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<style type="text/css">
+		.card{
+			width: 150px;
+			height: 200px;
+			background-color: #333;
+			border-radius: 10px;
+			outline: 1px solid
+				rgba(255, 255, 255, .5);
+			outline-offset: -8px;
+			box-shadow: 3px 3px 10px
+				rgba(0, 0, 0, .1);
+			position: relative;
+			overflow: hidden;
+		}
+		.card-image{
+			position: absolute;
+			inset: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			opacity: .6;
+			transition: transform .75s;
+		}
+		.card:hover .card-image{
+			transform: scale(1.15);
+		}
+		.card-title{
+			position: absolute;
+			left: 15px;
+			bottom: 15px;
+			font-size: 20px;
+			text-shadow: 0 0 1px
+				rgba(0, 0, 0, .5);
+		}
+	</style>
+</head>
+<body>
+	<div class="card">
+		<img src="./Zoom-in animation_files/dream.jpg" alt="" class="card-image">
+		<h1 class="card-title"><font color="FFFFF0">The Dream</font></h1>
+	</div>
+
+</body></html>

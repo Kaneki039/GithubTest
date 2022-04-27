@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Preloader</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <style type="text/css">
+    .spinner {
+			position: relative;
+			width: 80px;
+			height: 80px;
+			border-radius: 50%;
+		}
+		.spinner::before
+		.spinner:after{
+			content: "";
+			position: absolute;
+			border-radius: inherit;
+		}
+		.spinner:before {
+			width: 100%;
+			height: 100%;
+			background-image:linear-gradient(
+				0deg,#ff00cc 0%, #333399 100%);
+			animation: spin .5s infinite linear;
+		}
+		.spinner:after {
+			width: 85%;
+			height: 85%;
+			background-color: #151515;
+			top: 50%;
+			left: 50%;
+			transform: translated(-50%, -50%);
+		}
+		@keyframes spin {
+			to {
+				transform: rotate(360deg);
+			}
+		}
+    </style>
+    <script>
+    </script>
+  </head>
+<body>
+    <div class="spinner">
+        Harap Tunggu
+    </div>
+<section>
+      <h1>Section #1</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+<section>
+      <h1>Section #2</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+<section>
+      <h1>Section #3</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+  </body>
+</html>
